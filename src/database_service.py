@@ -22,7 +22,6 @@ def get_student_score_info():
     engine = create_engine(
     f"mssql+{DRIVER}://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}"
     )
-
     query = (
         select(m.StudentScore.student_id, m.StudentScore.score, m.StudentDepartment.home_department)
         .join(m.StudentDepartment, m.StudentScore.student_id == m.StudentDepartment.student_id)
@@ -35,7 +34,6 @@ def push_student_info(student_data):
     engine = create_engine(
         f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
     )
-    
     table_name = "students"
     schema_name = "silver"
 
