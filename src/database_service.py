@@ -20,7 +20,7 @@ DB_NAME = "de"
 def get_student_score_info():
 
     engine = create_engine(
-    f"mssql+{DRIVER}://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}"
+        f"mssql+{DRIVER}://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}"
     )
     query = (
         select(m.StudentScore.student_id, m.StudentScore.score, m.StudentDepartment.home_department)

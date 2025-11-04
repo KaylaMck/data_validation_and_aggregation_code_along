@@ -1,0 +1,9 @@
+2025-11-04 15:04:02,630 - INFO - Starting data pipeline
+2025-11-04 15:14:50,847 - INFO - Starting data pipeline
+2025-11-04 15:14:52,011 - INFO - Retrieved 100 rows of student score data
+2025-11-04 15:14:52,766 - INFO - Retrieved 100 rows of student demographic data
+2025-11-04 15:14:52,775 - INFO - Combined data has 100 rows
+2025-11-04 15:14:52,777 - INFO - Removing 3 rows due to null values.
+2025-11-04 15:14:52,780 - INFO - Overwriting homedepartment for 3 rows based on major
+2025-11-04 15:14:52,781 - INFO - Processed data has 98 rows
+2025-11-04 15:14:53,220 - INFO - Data pipeline completed successfully

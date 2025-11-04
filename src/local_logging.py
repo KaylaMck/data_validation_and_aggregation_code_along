@@ -10,7 +10,6 @@ def get_logger():
     log_filename = f"{log_dir}/pipeline_{datetime.now().strftime('%Y%m%d')}.log"
     
     logging.basicConfig(
-        filename=log_filename,
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s",
         handlers=[
